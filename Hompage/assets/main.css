@@ -1,0 +1,238 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: GothamHTFbold;
+    src: url(font/gothamhtf-bold-webfont.ttf);
+}
+
+@font-face {
+    font-family: GothamHTFbook;
+    src: url(font/gothamhtf-book-webfont.ttf);
+}
+
+/* HEADER */
+.header {
+    position: relative;
+    padding-top: 61%;
+    height: 100%;
+    cursor: default;
+}
+
+.header__img {
+    top: 0;
+    width: 100%;
+    padding-top: 61%;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+.header__img::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: linear-gradient(to right, rgb(255, 255, 255, 0.5), transparent);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.header__title {
+    position: absolute;
+    font-size: 4.861vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: GothamHTFbold;
+    letter-spacing: 2px;
+
+}
+
+.header__navbar {
+    position: absolute;
+    padding-left: 3.611vw;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: GothamHTFbook;
+    font-size: 0.993vw;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.header__navbar-list {
+    list-style: none;
+}
+
+.header__navbar-item {
+    padding: 1.250vw 0;
+    cursor: pointer;
+}
+
+/* CONTAINER */
+.container {
+    cursor: default;
+}
+
+.container__up {
+    display: flex;
+    position: relative;
+    
+}
+
+.container__up-item {
+    height: 50.53%;
+    position: relative;
+}
+
+.container__up-img {
+    width: 100%;
+}
+
+.container__img-name-left {
+    position: absolute;
+    font-size: 3.472vw;
+    color: #fff;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    font-family: GothamHTFbold;
+}
+
+.container__img-name-right {
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    font-family: GothamHTFbold;
+}
+
+.container__img-name-up {
+    font-size: 4.167vw;
+}
+
+.container__img-name-down {
+    font-size: 2.083vw;
+}
+
+.container__content {
+    height: 4.583vw;
+    text-align: center;
+    line-height: 4.583vw;
+    font-size: 1.201vw;
+    font-family: GothamHTFbook;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.container__down {
+    display: flex;
+}
+
+.container__down-img {
+    width: 20%;
+}
+
+/* FOOTER */
+.footer {
+    cursor: default;
+}
+
+.footer-first {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.footer-left {
+    margin: 2.778vw 6.597vw;
+}
+
+.footer-left__title {
+    font-size: 1.201vw;
+    font-family: GothamHTFbold;
+    padding: 0.833vw 0;
+}
+
+.footer-left__search {
+    display: flex;
+}
+
+.footer-left__search-input {
+    flex: 1;
+    height: 3.194vw;
+    width: 33.889vw;
+    border: 1px solid #000;
+    outline: none;
+    padding-left: 6px;
+}
+
+.footer-left__search-btn {
+    font-size: 1.201vw;
+    font-family: GothamHTFbold;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+    width: 3.194vw;
+    margin-left: 0.278vw;
+    cursor: pointer;
+}
+
+.footer-left__socials {
+    display: flex;
+    padding-left: 0.694vw;
+    margin-top: 2.083vw;
+}
+
+.footer-left__socials-icon {
+    list-style: none;
+    padding-right: 2.083vw;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.footer-right {
+    margin: 2.778vw 6.597vw;
+}
+
+.footer-right__list {
+    list-style: none;
+}
+
+.footer-right__list-heading {
+    font-size: 1.201vw;
+    font-family: GothamHTFbold;
+    padding: 0.833vw 0;
+}
+
+.footer-right__list-item {
+    font-size: 0.854vw;
+    font-family: GothamHTFbook;
+    padding-bottom: 0.833vw;
+    cursor: pointer;
+}
+
+.footer-end__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    font-size: 0.764vw;
+    font-family: GothamHTFbook;
+    margin: 3.333vw 0;
+    cursor: default;
+}
+
+.footer-end__list-item {
+    border-right: 1px solid #000;
+    padding: 0 1.111vw;
+}
+
+.footer-end__list-item:last-child {
+    border: none;
+}
